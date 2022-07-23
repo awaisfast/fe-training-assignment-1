@@ -4,6 +4,12 @@ $colors: (
   bg: #303841,
 );
 $font: "Poppins", sans-serif;
+$mobile: 500px;
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
@@ -47,5 +53,38 @@ body {
         background-color: #45567d;
       }
     }
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.welcome {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: color(welcome);
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    @include mobile {
+      font-size: 3rem;
+    }
+  }
+  p {
+    color: color(nav-bg);
+    font-size: 1.8rem;
+    font-weight: 1000;
+    font-style: italic;
   }
 }
