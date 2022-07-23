@@ -1,0 +1,51 @@
+$colors: (
+  nav-bg: #be3144,
+  text-color: #f0f0f0,
+  bg: #303841,
+);
+$font: "Poppins", sans-serif;
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+html {
+  background-color: color(bg);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: $font;
+  color: color(text-color);
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: color(nav-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    .nav-links {
+      display: flex;
+      margin-right: 2rem;
+
+      li {
+        list-style: none;
+      }
+      a {
+        font-size: 1.5rem;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 1.1rem;
+        color: color(text-color);
+      }
+      a:hover {
+        background-color: #45567d;
+      }
+    }
+  }
+}
