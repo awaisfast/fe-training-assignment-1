@@ -88,3 +88,76 @@ body {
     font-style: italic;
   }
 }
+
+.projects {
+  background-color: #45567d;
+  padding: 5rem 2rem;
+  text-align: center;
+  h2 {
+    font-family: "Raleway", sans-serif;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-weight: 700;
+    font-size: 2.5rem;
+    border-bottom: 0.1rem solid #f0f0f0;
+  }
+
+  .project-links {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+    a {
+      width: 90%;
+      margin: auto;
+      text-decoration: none;
+      color: color(text-color);
+      border-radius: 2px;
+      background-color: #3a3d40;
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      .arrows {
+        color: #3a3d40;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in;
+      }
+      .title {
+        font-size: 1rem;
+      }
+    }
+    a:hover .arrows {
+      color: rgb(255, 166, 0);
+    }
+  }
+  a {
+    button {
+      margin-top: 2rem;
+      padding: 0.7rem 1.5rem;
+      color: #f0f0f0;
+      background-color: #3a3d40;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: large;
+      font-weight: 400;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+    button:hover {
+      background-color: #be3144;
+    }
+    p {
+      padding: 1.2rem 0;
+    }
+    i {
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+    }
+  }
+  a:hover i {
+    margin-left: 0.3rem;
+  }
+}
