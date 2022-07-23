@@ -4,7 +4,7 @@ $colors: (
   bg: #303841,
 );
 $font: "Poppins", sans-serif;
-$mobile: 500px;
+$mobile: 700px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
     @content;
@@ -171,6 +171,9 @@ body {
   h2 {
     font-size: 4rem;
     margin-bottom: 0;
+    @include mobile {
+      font-size: 2.5rem;
+    }
   }
   p {
     font-style: italic;
