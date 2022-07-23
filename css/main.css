@@ -1,0 +1,38 @@
+html {
+  background-color: #303841;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: #f0f0f0;
+}
+body nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #be3144;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+body nav .nav-links {
+  display: flex;
+  margin-right: 2rem;
+}
+body nav .nav-links li {
+  list-style: none;
+}
+body nav .nav-links a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 1.1rem;
+  color: #f0f0f0;
+}
+body nav .nav-links a:hover {
+  background-color: #45567d;
+}/*# sourceMappingURL=main.css.map */
