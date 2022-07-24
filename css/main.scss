@@ -198,3 +198,15 @@ body {
     }
   }
 }
+footer {
+  border-top: 4px solid #be3144;
+  font-weight: 300;
+  padding: 2.2rem 3rem;
+  .foot-content {
+    display: flex;
+    justify-content: space-evenly;
+    p {
+      font-size: large;
+    }
+  }
+}
